@@ -1,0 +1,4 @@
+.mat-dialog-content {
+  max-height: 10vh !important;
+  min-height: 10vh !important;
+}

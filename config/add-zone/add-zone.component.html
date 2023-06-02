@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>{{dialogData?.dialogData?.dialogHeader}}</h1>
+
+<form [formGroup]="zoneForm">
+  <div mat-dialog-content>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <mat-form-field class="example-full-width">
+          <input matInput type="text" placeholder="Zone name" formControlName="zone_name">
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div mat-dialog-actions align="end">
+    <button mat-button class="mr-3" type="button" (click)="onNoClick()" [disabled]="showLoading">BACK</button>
+    <button mat-raised-button color="primary" type="button" [disabled]="zoneForm.invalid || showLoading" (click)="onYesClick()" cdkFocusInitial>
+      SAVE
+      <i class="fas fa-spinner ml-2" *ngIf="showLoading"></i>
+    </button>
+  </div>
+</form>
