@@ -1,0 +1,7 @@
+type Query{
+    Category:[Category!]
+}
+type Category{
+    Category_Id:ID!,
+    CategoryName:String,
+}

@@ -1,0 +1,32 @@
+{
+  "name": "sso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.12.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.17.3",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mkdir": "0.0.2",
+    "moment": "^2.24.0",
+    "multer": "^1.4.4",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.7.0",
+    "request": "^2.88.0",
+    "sequelize": "^5.22.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
